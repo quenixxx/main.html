@@ -12,7 +12,7 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-    background: url(6429582917.jpg) center / cover no-repeat;
+    background: url(/quenixxx.github.io/media/6429582917.jpg) center / cover no-repeat;
     filter: blur(10px);  }
   body,
   html {
@@ -76,7 +76,7 @@ img.rot {
     }
 }
 .container h1{
-    animation: text-box-shadow 3s infinite, color-change-text 5s infinite;    ;
+    animation: text-box-shadow 3s infinite, color-change-text 5s infinite;   
     font-family: "Bebas Neue", serif;
     font-weight: 500;
     font-style: normal;
@@ -135,17 +135,8 @@ img.rot {
         background-color: hsl(0, 98%, 53%);
     }
 }
-@keyframes text-color{
-    0%{
-        color:#b8b8b8;
-    }
-    50%{
-        color:#000000;
-    }
-    100%{
-        color:#b8b8b8;
-    }
-}
+
+/* @keyfra */
 .button-claim{
     background-color: var(color-change-button);
     border:0px solid #000;
@@ -155,10 +146,30 @@ img.rot {
     border-radius: 30px;
     font-size:1.25rem;
 }
+@keyframes color-change-input{
+    0%{
+        border: 2px solid hsl(0, 100%, 41%);
+    }
+    30%{
+        border: 2px solid hsl(0, 100%, 23%);
+    }
+    60%{
+        border: 2px solid hsl(0, 0%, 100%);
+    }
+    100%{
+        border: 2px solid hsl(0, 100%, 41%);
+    }
+}
+.input-main:hover{
+    animation: color-change-input inline 3s infinite;
+    border: var(color-change-input)
+}
+input{
+    outline: none;
+}
 .container a{
     text-decoration: none;
-    animation:text-color 3s infinite;
-    color:var(text-color);
+    Color: white;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 500;
